@@ -19,16 +19,15 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_name: Vitech documentation
+site_url: https://github.com/sarahjones123/new-docs
+site_author: Dipender Sharma
 site_description: >-
-  Write your documentation in Markdown and create a professional static site in
-  minutes – searchable, customizable, in 60+ languages, for all devices
+  Placeholder for Vitech documentations
 
 # Repository
-repo_name: xxxxx
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: 
+repo_url: 
 
 # Copyright
 copyright: Copyright @ Vitech documentation
@@ -39,8 +38,6 @@ theme:
   custom_dir: material/overrides
   features:
     - announce.dismiss
-    - content.action.edit
-    - content.action.view
     - content.code.annotate
     - content.code.copy
     # - content.code.select
@@ -77,7 +74,7 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
+    - media: "(prefers-color-scheme: light)"
       scheme: slate
       primary: black
       accent: indigo
@@ -87,10 +84,9 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/favicon.jpg
   icon:
     logo: logo
-
 # Plugins
 plugins:
   - blog
@@ -107,6 +103,7 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+  generator: false  
   analytics:
     provider: google
     property: !ENV GOOGLE_ANALYTICS_KEY
