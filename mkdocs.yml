@@ -27,11 +27,11 @@ site_description: >-
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
-repo_name: squidfunk/mkdocs-material
+repo_name: xxxxx
 repo_url: https://github.com/squidfunk/mkdocs-material
 
 # Copyright
-copyright: Copyright &copy; 2016 - 2024 Martin Donath
+copyright: Copyright @ Vitech documentation
 
 # Configuration
 theme:
@@ -72,7 +72,7 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: teal
       accent: indigo
       toggle:
         icon: material/toggle-switch
@@ -174,7 +174,6 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
   - Getting started:
     - Installation: getting-started.md
     - Creating your site: creating-your-site.md
@@ -213,7 +212,9 @@ nav:
       - setup/extensions/index.md
       - Python Markdown: setup/extensions/python-markdown.md
       - Python Markdown Extensions: setup/extensions/python-markdown-extensions.md
-  - Plugins:
+  
+  - Release Notes: 
+    - release.md
     - plugins/index.md
     - Blog: plugins/blog.md
     - Group: plugins/group.md
@@ -230,7 +231,7 @@ nav:
     - Requirements:
       - Image processing: plugins/requirements/image-processing.md
       - Caching: plugins/requirements/caching.md
-  - Reference:
+  - Academy:
     - reference/index.md
     - Admonitions: reference/admonitions.md
     - Annotations: reference/annotations.md
@@ -247,6 +248,8 @@ nav:
     - Lists: reference/lists.md
     - Math: reference/math.md
     - Tooltips: reference/tooltips.md
+
+ 
   - Insiders:
     - insiders/index.md
     - Why sponsor us: insiders/why-sponsor-us.md
@@ -266,6 +269,8 @@ nav:
     - Changelog:
       - insiders/changelog/index.md
       - How to upgrade: insiders/upgrade.md
+
+
   - Community:
     - Contributing:
       - contributing/index.md
