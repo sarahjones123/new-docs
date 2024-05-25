@@ -1,177 +1,88 @@
-# Getting started
+# About V3locity Core-admin
 
-Material for MkDocs is a powerful documentation framework on top of [MkDocs],
-a static site generator for project documentation.[^1] If you're familiar with
-Python, you can install Material for MkDocs with [`pip`][pip], the Python
-package manager. If not, we recommend using [`docker`][docker].
+**V3locity Core-admin** is a cloud-native administration, engagement, and analytics platform that combines full lifecycle benefit and investment administration functionality with robust enterprise capabilities. The unified data model, rules, and workflow engines empower cross-function configuration, reporting, and overall operational control.
 
-  [^1]:
-    In 2016, Material for MkDocs started out as a simple theme for MkDocs, but
-    over the course of several years, it's now much more than that – with the
-    many built-in plugins, settings, and countless customization abilities,
-    Material for MkDocs is now one of the simplest and most powerful frameworks
-    for creating documentation for your project.
+## Key offerings
 
-  [MkDocs]: https://www.mkdocs.org
-  [pip]: #with-pip
-  [docker]: #with-docker
+V3locity offers deep domain and enterprise functionality. The domain functionality covers business modules that provide relevant features to help administer retirement, health and investment benefits. 
 
-## Installation
+Enterprise functionality covers modules that provide relevant features to help manage information and processes relevant to large organizations. This means that features like *Workflow Management, imaging, Batch scheduling, template-based correspondence, reporting* and more are provided directly within the core solution without the need for bolt-on, third party components. This simplifies implementation and maintenance. 
 
-### with pip <small>recommended</small> { #with-pip data-toc-label="with pip" }
+This also allows for a more powerful user experience, as enterprise components can interact with domain-specific modules in ways that could not be accomplished using third party integration.
 
-Material for MkDocs is published as a [Python package] and can be installed with
-`pip`, ideally by using a [virtual environment]. Open up a terminal and install
-Material for MkDocs with:
+## Key Features
 
-=== "Latest"
+V3locity offers key administrative features for three business verticals – **Insurance**, **Retirement** and **Investments**. These features are capabilities that an organization needs because they are in the business of operating in those domains.
 
-    ``` sh
-    pip install mkdocs-material
-    ```
+The V3locity Help system is designed to help the users to gain a high-level understanding about the navigation, modules, and configuration of certain business aspects. 
 
-=== "9.x"
+### Additional information
 
-    ``` sh
-    pip install mkdocs-material=="9.*" # (1)!
-    ```
+If you require additional and detailed information about payment, billing, access management, and more, here is everything you need to know:
 
-    1.  Material for MkDocs uses [semantic versioning][^2], which is why it's a
-        good idea to limit upgrades to the current major version.
+<div class="grid cards" markdown>
 
-        This will make sure that you don't accidentally [upgrade to the next
-        major version], which may include breaking changes that silently corrupt
-        your site. Additionally, you can use `pip freeze` to create a lockfile,
-        so builds are reproducible at all times:
+-   :material-hand-coin: &nbsp;
+    __Insurance__
 
-        ```
-        pip freeze > requirements.txt
-        ```
+    ---
 
-        Now, the lockfile can be used for installation:
+    All the information you need about insurance
 
-        ```
-        pip install -r requirements.txt
-        ```
+    ---
 
-  [^2]:
-    Note that improvements of existing features are sometimes released as
-    patch releases, like for example improved rendering of content tabs, as
-    they're not considered to be new features.
+    [:octicons-arrow-right-24: More infomation] [Upgrade]
 
-This will automatically install compatible versions of all dependencies:
-[MkDocs], [Markdown], [Pygments] and [Python Markdown Extensions]. Material for
-MkDocs always strives to support the latest versions, so there's no need to
-install those packages separately.
+-   :material-key-variant: &nbsp;
+    __Retirement__
 
----
+    ---
 
-:fontawesome-brands-youtube:{ style="color: #EE0F0F" }
-__[How to set up Material for MkDocs]__ by @james-willett – :octicons-clock-24:
-15m – Learn how to create and host a documentation site using Material for
-MkDocs on GitHub Pages in a step-by-step guide.
+    Learn about retirement– for individuals and
+    organizations
 
-  [How to set up Material for MkDocs]: https://www.youtube.com/watch?v=Q-YA_dA8C20
+    ---
 
----
+    [:octicons-arrow-right-24: More infomation] [Upgrade]
 
-!!! tip
+-   :material-clock-time-three: &nbsp;
+    __Investment__
 
-    If you don't have prior experience with Python, we recommend reading
-    [Using Python's pip to Manage Your Projects' Dependencies], which is a
-    really good introduction on the mechanics of Python package management and
-    helps you troubleshoot if you run into errors.
+    ---
 
-  [Python package]: https://pypi.org/project/mkdocs-material/
-  [virtual environment]: https://realpython.com/what-is-pip/#using-pip-in-a-python-virtual-environment
-  [semantic versioning]: https://semver.org/
-  [upgrade to the next major version]: upgrade.md
-  [Markdown]: https://python-markdown.github.io/
-  [Pygments]: https://pygments.org/
-  [Python Markdown Extensions]: https://facelessuser.github.io/pymdown-extensions/
-  [Using Python's pip to Manage Your Projects' Dependencies]: https://realpython.com/what-is-pip/
+    Receive information on the duration of your sponsorship and the cancellation
+    process
 
-### with docker
+    ---
 
-The official [Docker image] is a great way to get up and running in a few
-minutes, as it comes with all dependencies pre-installed. Open up a terminal
-and pull the image with:
+    [:octicons-arrow-right-24: More information] [Upgrade]
 
-=== "Latest"
+-   :material-email: &nbsp;
+    __Support__
 
-    ```
-    docker pull squidfunk/mkdocs-material
-    ```
+    ---
 
-=== "9.x"
+    Overview of our support options available, ensuring you get the information
+    you need
 
-    ```
-    docker pull squidfunk/mkdocs-material:9
-    ```
+    ---
 
-The `mkdocs` executable is provided as an entry point and `serve` is the
-default command. If you're not familiar with Docker don't worry, we have you
-covered in the following sections.
+    [:octicons-arrow-right-24: More information] [Upgrade]
 
-The following plugins are bundled with the Docker image:
+</div>
 
-- [mkdocs-minify-plugin]
-- [mkdocs-redirects]
+  [Upgrade]: enterprise-support.md
 
-  [Docker image]: https://hub.docker.com/r/squidfunk/mkdocs-material/
-  [mkdocs-minify-plugin]: https://github.com/byrnereese/mkdocs-minify-plugin
-  [mkdocs-redirects]: https://github.com/datarobot/mkdocs-redirects
+----  
 
-??? question "How to add plugins to the Docker image?"
+## Getting Help
 
-    Material for MkDocs only bundles selected plugins in order to keep the size
-    of the official image small. If the plugin you want to use is not included,
-    you can add them easily:
+If you encounter issues or have questions, here’s how you can get assistance:
 
-    === "Material for MkDocs"
+1. Consult our FAQ, Troubleshooting Guide, or Glossary.
 
-        Create a `Dockerfile` and extend the official image:
+2. Explore our Academy for free resources on algorithmic trading and market making.
 
-        ``` Dockerfile title="Dockerfile"
-        FROM squidfunk/mkdocs-material
-        RUN pip install mkdocs-macros-plugin
-        RUN pip install mkdocs-glightbox
-        ```
+3. To report bugs or suggest features, submit a Github issue.
 
-    === "Insiders"
-
-        Clone or fork the Insiders repository, and create a file called
-        `user-requirements.txt` in the root of the repository. Then, add the
-        plugins that should be installed to the file, e.g.:
-
-        ``` txt title="user-requirements.txt"
-        mkdocs-macros-plugin
-        mkdocs-glightbox
-        ```
-
-    Next, build the image with the following command:
-
-    ```
-    docker build -t squidfunk/mkdocs-material .
-    ```
-
-    The new image will have additional packages installed and can be used
-    exactly like the official image.
-
-### with git
-
-Material for MkDocs can be directly used from [GitHub] by cloning the
-repository into a subfolder of your project root which might be useful if you
-want to use the very latest version:
-
-```
-git clone https://github.com/squidfunk/mkdocs-material.git
-```
-
-Next, install the theme and its dependencies with:
-
-```
-pip install -e mkdocs-material
-```
-
-  [GitHub]: https://github.com/squidfunk/mkdocs-material
+We pledge that we will not use the information/data your provide us for trading purposes nor share them with third parties.
