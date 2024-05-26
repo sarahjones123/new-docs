@@ -53,11 +53,11 @@ theme:
     # - navigation.instant.prefetch
     # - navigation.instant.progress
     # - navigation.prune
-    # - navigation.sections
+    - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
-    # - navigation.tracking
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
@@ -213,75 +213,29 @@ nav:
         - Printing Documents: world/print_document.md
 
     - Processing: 
-      - Workflow: 
-        - Viewing workflows or tasks: processing/view_workflow.md
-        - Creating workflow: processing/create_workflow.md
-        - Adding task: processing/add_a_task.md
-      - Documents: 
-        - Viewing Documents: processing/view_document.md
-        - Exporting Documents: processing/export_document.md
-        - Printing Documents: processing/print_document.md
-    
-    - Tools: 
-      - Tools topic 1: 
-        - Viewing workflows or tasks: licensess.md 
-        - Creating workflow: Creating Workflows
-        - Adding task: Adding Task
-      - Tools topic 2: 
-        - Viewing Documents: Viewing Documents
-        - Exporting Documents: Exporting Documents
-        - Printing Documents: Printing Documents  
-
-    - Rules: 
-      - Rules topic 1: 
-        - Viewing workflows or tasks: licensess.md 
-        - Creating workflow: Creating Workflows
-        - Adding task: Adding Task
-      - Rules topic 2: 
-        - Viewing Documents: Viewing Documents
-        - Exporting Documents: Exporting Documents
-        - Printing Documents: Printing Documents       
+      - Document: 
+        - Viewing documents: processing/view_workflow.md
+      - Task: 
+        - Workforce setup: processing/view_document.md   
 
     - Insurance: 
       - Overview: insurance/index.md
       - Group insurance: insurance/group_insurance.md
-      - Adding task: Adding Task
-      - Insurance topic 2: 
-        - Viewing Documents: Viewing Documents
-        - Exporting Documents: Exporting Documents
-        - Printing Documents: Printing Documents   
 
     - Pension: 
-      - Overview: insurance/index.md
-      - Group insurance: insurance/group_insurance.md
-      - Adding task: Adding Task
-      - Insurance topic 2: 
-        - Viewing Documents: Viewing Documents
-        - Exporting Documents: Exporting Documents
-        - Printing Documents: Printing Documents  
-    - Release note:
-      -  22.4 version: release_note/release.md
+      - Overview: pension/index.md
+      - Retirement pension: pension/group_insurance.md
+ 
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting/troubleshooting.md 
+    - Template: template/template.md 
 
   - Release Notes: 
-    - release.md
-    - plugins/index.md
-    - Blog: plugins/blog.md
-    - Group: plugins/group.md
-    - Info: plugins/info.md
-    - Meta: plugins/meta.md
-    - Offline: plugins/offline.md
-    - Optimize: plugins/optimize.md
-    - Privacy: plugins/privacy.md
-    - Projects: plugins/projects.md
-    - Search: plugins/search.md
-    - Social: plugins/social.md
-    - Tags: plugins/tags.md
-    - Typeset: plugins/typeset.md
-    - Requirements:
-      - Image processing: plugins/requirements/image-processing.md
-      - Caching: plugins/requirements/caching.md
+    - Vitech release note: release_note/release.md
+    - Version:
+      - Version 8.2.x: release_note/v_8.2.0.md
+      - Version 8.1.x: release_note/v_8.1.0.md
+      - Version 7.0.x: release_note/v_7.0.5.md
 
   - Academy:
     - reference/index.md

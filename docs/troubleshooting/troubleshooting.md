@@ -2,7 +2,7 @@
 status: new
 ---
 
-# Enterprise Feedback
+# Troubleshooting
 
 We highly value the insights of our enterprise users, and we're eager to hear
 from you. Your feedback is immensely valuable to us. If you're utilizing
