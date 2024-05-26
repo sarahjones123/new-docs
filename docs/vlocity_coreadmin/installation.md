@@ -1,4 +1,4 @@
-# Installing GENESYS by Vitech
+# Installing Vitech CodeAdmin
 
 !!! note "Note"
 
@@ -9,7 +9,7 @@
 
 ## Prerequisites
 
-Before installing GENESYS, ensure your system meets the following requirements:
+Before installing Vitech CoreAdmin, ensure your system meets the following requirements:
 
 - **Operating System:** Windows 10 or higher
 - **Processor:** 2 GHz or faster

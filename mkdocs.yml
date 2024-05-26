@@ -104,7 +104,7 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
-  generator: false  
+  generator: false
   analytics:
     provider: google
     property:
@@ -120,7 +120,6 @@ extra:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
 
-extra:
   analytics: # (1)!
     feedback:
       title: Was this page helpful?
