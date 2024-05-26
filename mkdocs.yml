@@ -48,15 +48,16 @@ theme:
     # - navigation.expand
     - navigation.footer
     - navigation.indexes
+    - navigation.path
     # - navigation.instant
     # - navigation.instant.prefetch
     # - navigation.instant.progress
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
-    - navigation.tracking
+    # - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
@@ -106,7 +107,7 @@ extra:
   generator: false  
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
+    property:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/squidfunk
@@ -118,6 +119,24 @@ extra:
       link: https://fosstodon.org/@squidfunk
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/squidfunk
+
+extra:
+  analytics: # (1)!
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- # (2)!
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
 
 # Extensions
 markdown_extensions:
@@ -171,87 +190,80 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Getting started: 
-    - V3locity Core-admin: 
-      - Overview: getting-started.md
-      - Using the app: 
-        - User interface: Accessing the app
-        - Navigation: 
-          - Understanding the UI elements: Understanding the UI elements
-          - Understanding navigation bar: Understanding navigation bar
-          - Dashboard basic: Dashboard basic
+  - Docs: 
+    - V3locity Core-Admin: vlocity_coreadmin/getting-started.md
+    - Installation: vlocity_coreadmin/installation.md
+    - Using the app: 
+      - User interface: vlocity_coreadmin/user_interface.md
+      - Navigation: 
+        - Understanding navigation bar: vlocity_coreadmin/understanding_navigation_bar.md
+        - Dashboard: vlocity_coreadmin/dashboard.md
+        - Navigation path: vlocity_coreadmin/navigation_path.md
 
-      - World: 
-        - About Customer Relations Management_CRM: upgrades.md
-        - Contact History: licenses.md
-        - Workflows or Tasks: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Documents: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents 
+    - World:
+      - About Customer Relations Management_CRM: world/about_crm.md
+      - Contact History: world/contact_history.md
+      - Workflows or Tasks: 
+        - Viewing workflows or tasks: world/view_workflow.md
+        - Creating workflow: world/create_workflow.md
+        - Adding task: world/add_a_task.md
+      - Documents: 
+        - Viewing Documents: world/view_document.md
+        - Exporting Documents: world/export_document.md
+        - Printing Documents: world/print_document.md
 
-      - Processing: 
-        - Workflow: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Workflow Automation: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents 
+    - Processing: 
+      - Workflow: 
+        - Viewing workflows or tasks: processing/view_workflow.md
+        - Creating workflow: processing/create_workflow.md
+        - Adding task: processing/add_a_task.md
+      - Documents: 
+        - Viewing Documents: processing/view_document.md
+        - Exporting Documents: processing/export_document.md
+        - Printing Documents: processing/print_document.md
     
-      - Tools: 
-        - Tools topic 1: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Tools topic 2: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents  
-
-      - Rules: 
-        - Rules topic 1: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Rules topic 2: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents       
-
-      - Admin: 
-        - Admin topic 1: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Admin topic 2: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents   
-
-      - Insurance: 
-        - Overview: insurance/index.md
-        - Group insurance: insurance/group_insurance.md
+    - Tools: 
+      - Tools topic 1: 
+        - Viewing workflows or tasks: licensess.md 
+        - Creating workflow: Creating Workflows
         - Adding task: Adding Task
-        - Insurance topic 2: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents   
+      - Tools topic 2: 
+        - Viewing Documents: Viewing Documents
+        - Exporting Documents: Exporting Documents
+        - Printing Documents: Printing Documents  
 
-      - Pension: 
-        - Pension topic 1: 
-          - Viewing workflows or tasks: licensess.md 
-          - Creating workflow: Creating Workflows
-          - Adding task: Adding Task
-        - Pension topic 2: 
-          - Viewing Documents: Viewing Documents
-          - Exporting Documents: Exporting Documents
-          - Printing Documents: Printing Documents
-  
+    - Rules: 
+      - Rules topic 1: 
+        - Viewing workflows or tasks: licensess.md 
+        - Creating workflow: Creating Workflows
+        - Adding task: Adding Task
+      - Rules topic 2: 
+        - Viewing Documents: Viewing Documents
+        - Exporting Documents: Exporting Documents
+        - Printing Documents: Printing Documents       
+
+    - Insurance: 
+      - Overview: insurance/index.md
+      - Group insurance: insurance/group_insurance.md
+      - Adding task: Adding Task
+      - Insurance topic 2: 
+        - Viewing Documents: Viewing Documents
+        - Exporting Documents: Exporting Documents
+        - Printing Documents: Printing Documents   
+
+    - Pension: 
+      - Overview: insurance/index.md
+      - Group insurance: insurance/group_insurance.md
+      - Adding task: Adding Task
+      - Insurance topic 2: 
+        - Viewing Documents: Viewing Documents
+        - Exporting Documents: Exporting Documents
+        - Printing Documents: Printing Documents  
+    - Release note:
+      -  22.4 version: release_note/release.md
+    - Glossary: glossary.md
+    - Troubleshooting: troubleshooting/troubleshooting.md 
+
   - Release Notes: 
     - release.md
     - plugins/index.md
@@ -270,6 +282,7 @@ nav:
     - Requirements:
       - Image processing: plugins/requirements/image-processing.md
       - Caching: plugins/requirements/caching.md
+
   - Academy:
     - reference/index.md
     - Admonitions: reference/admonitions.md
