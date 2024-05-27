@@ -71,7 +71,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: teal
-      accent: indigo
+      accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -228,6 +228,7 @@ nav:
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting/troubleshooting.md 
     - Template: template/template.md 
+    - Demo: insurance/demo.md 
 
   - Release Notes: 
     - Vitech release note: release_note/release.md
