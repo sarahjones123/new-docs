@@ -19,7 +19,7 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Vitech documentation
+site_name: Documentation
 site_url: https://github.com/sarahjones123/new-docs
 site_author: Dipender Sharma
 site_description: >-
@@ -30,7 +30,7 @@ repo_name:
 repo_url: 
 
 # Copyright
-copyright: Copyright @ Vitech documentation
+copyright: Copyright @ Vitech Documentation
 
 # Configuration
 theme:
@@ -70,7 +70,7 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
+      primary: custom
       accent: red
       toggle:
         icon: material/toggle-switch
@@ -83,16 +83,18 @@ theme:
         icon: material/toggle-switch-off
         name: Switch to system preference
   font:
-    text: Roboto
+    text: DM Sans
     code: Roboto Mono
   favicon: assets/favicon.jpg
+  logo: assets/logo.png
   icon:
-    logo: logo
+    # logo: logo
 # Plugins
 plugins:
   - blog
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - offline
 
 # Hooks
 hooks:
@@ -104,21 +106,18 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+    update: Recently updated
   generator: false
   analytics:
     provider: google
     property:
   social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
+    - icon: fontawesome/brands/facebook
+      link: https://facebook.com/vitechinc
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/vitech-systems-group/
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://x.com/VitechSystems
 
   analytics: # (1)!
     feedback:
@@ -136,6 +135,9 @@ extra:
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
 
+# Stylesheets
+extra_css:
+  - stylesheets/extra.css
 
 # Extensions
 markdown_extensions:
@@ -228,14 +230,54 @@ nav:
     - Glossary: glossary.md
     - Troubleshooting: troubleshooting/troubleshooting.md 
     - Template: template/template.md 
-    - Demo: insurance/demo.md 
+    - Markdown syntax code: template/markdown_syntax_code.md 
 
-  - Release Notes: 
-    - Vitech release note: release_note/release.md
+  - Releases: 
+    # - Release note: 
+    - release_note/release.md
     - Version:
-      - Version 8.2.x: release_note/v_8.2.0.md
-      - Version 8.1.x: release_note/v_8.1.0.md
-      - Version 7.0.x: release_note/v_7.0.5.md
+      - 7.0.5: release_note/v_7.0.5.md
+      - 7.0.4: release_note/v_7.0.4.md
+      - 7.0.3: release_note/v_7.0.3.md
+
+  - Insurance:
+    - insurance/index.md
+    - Group Insurance: insurance/group_insurance.md
+    - Commissions: 
+      - Understand: commissions/index.md
+      - Commissions Setup: 
+        - Understand: Setup
+        - Adding standard commissions: Adding standard commissions
+        - Adding allocations: Adding allocations
+        - Commissions setup based on types and styles: Commissions setup based on types and styles
+      - Manage broker commissions: Manage broker commissions
+      - Running commissions batch: Running commissions batch
+      - Advance commissions:
+        - Understand: Understand
+        - Configure:
+          - Add advance repayment commissions: Add advance repayment commissions
+          - Generate advance commissions: Generate advance commissions
+          - Generate commissions recoupment: Generate commissions recoupment
+          - Advance true up commissions: Advance true up commissions
+
+    - World Entities: 
+      - Understand: commissions/index.md
+      - Entities configuration: 
+        - Understand: Setup
+        - Adding standard commissions: Adding standard commissions
+        - Adding allocations: Adding allocations
+        - Commissions setup based on types and styles: Commissions setup based on types and styles
+      - Entity Roles: Manage broker commissions
+      - Relationship: Running commissions batch
+      - Policy:
+        - Understand: Understand
+        - Configure:
+          - Add advance repayment commissions: Add advance repayment commissions
+          - Generate advance commissions: Generate advance commissions
+          - Generate commissions recoupment: Generate commissions recoupment
+          - Advance true up commissions: Advance true up commissions
+
+          
 
   - Academy:
     - reference/index.md
@@ -253,7 +295,7 @@ nav:
     - Images: reference/images.md
     - Lists: reference/lists.md
     - Math: reference/math.md
-    - Tooltips: reference/tooltips.md
+    - Tooltips: reference/tooltips.md  
 
 
   - Certification:
@@ -269,3 +311,4 @@ nav:
       - Creating a reproduction: guides/creating-a-reproduction.md
     - Community experts program:
       - insiders/community-experts-program/index.md
+
