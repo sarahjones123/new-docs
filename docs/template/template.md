@@ -5,6 +5,10 @@ status: deprecated
 # Few sample code to use
 
 ## Table
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
 ### Example 1
 

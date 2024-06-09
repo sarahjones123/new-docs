@@ -70,7 +70,7 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
+      primary: teal
       accent: red
       toggle:
         icon: material/toggle-switch
@@ -212,6 +212,7 @@ nav:
         - Viewing Documents: world/view_document.md
         - Exporting Documents: world/export_document.md
         - Printing Documents: world/print_document.md
+        - Abhilash: world/abhilash.md
 
     - Processing: 
       - Document: 
