@@ -254,9 +254,9 @@ nav:
       - Manage broker commissions: Manage broker commissions
       - Running commissions batch: Running commissions batch
       - Advance commissions:
-        - Understand: Understand
+        - Understand: commissions/advance_commissions/advance_commissions_overview.md
         - Configure:
-          - Add advance repayment commissions: Add advance repayment commissions
+          - Add advance repayment commissions: commissions/advance_commissions/add_advance_repayment_commissions.md
           - Generate advance commissions: Generate advance commissions
           - Generate commissions recoupment: Generate commissions recoupment
           - Advance true up commissions: Advance true up commissions
