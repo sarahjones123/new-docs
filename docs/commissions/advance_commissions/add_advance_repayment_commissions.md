@@ -24,8 +24,8 @@ Adding advance repayment commissions in Vlocity CoreAdmin involves several steps
 ## **Procedure**
 The following demonstrates the step-by-step process for adding Advance Repayment Commissions in v3locity coreadmin application.
 
-1. Log in to Vlocity CoreAdmin.
-2. Go to the World section from the main dashboard page.
+1. Log in to V3locity CoreAdmin.
+2. Go to the **World** section from the main dashboard page.
 3. In the **World Search**, locate the **Group** you want. The **Profile** page appears.
 4. Go to the **Account > Policies** tab.
 5. In the **Commissions Advance Repayment Setup** section, select **grid Actions > Add**. A new row appears in the grid.
