@@ -237,7 +237,8 @@ nav:
     # - Release note: 
     - release_note/release.md
     - Version:
-      - 7.0.5: release_note/v_7.0.5.md
+      - Oct 2024: release_note/oct_2024.md
+      - Jun 2024: release_note/jun_2024.md
       - 7.0.4: release_note/v_7.0.4.md
       - 7.0.3: release_note/v_7.0.3.md
 

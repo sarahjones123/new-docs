@@ -1,12 +1,12 @@
 # Release Notes
 We generally release a new version of **v3locity** application three times in a year. See below for information about each release.
 
-## [7.0.5](v_7.0.5.md) 
-*Released October 27, 2024*
+## [Jun 2024](jun_2024.md) 
+*Released June 11, 2024*
 
 - Insurance: `7.0.5`
 - Commission: `7.0.5`
-- Core Setup: `7.0.5`
+- Pension: `7.0.5`
 
 ## [7.0.4](v_7.0.4.md)
 *Released June 29, 2024*
