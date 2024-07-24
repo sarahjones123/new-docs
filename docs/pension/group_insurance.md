@@ -2,6 +2,8 @@
 Group life insurance is a type of insurance policy that an employer offers to its employees or members of a group. When employees elect coverage through the group policy, they are typically issued a certificate of coverage. If employees choose to take more advanced coverage options, they may have their portion of the premium payment deducted from their paycheck.
 
 It is important to note that coverage under a group life insurance policy is only valid for as long as the member is part of the group. If the member leaves the group, whether through resignation or termination, the coverage ends.
+
+It is important to note that coverage under a group life insurance policy is only valid for as long as the member is part of the group. If the member leaves the group, whether through resignation or termination, the coverage ends.
  
 ## Product Category
 V3locity offers the Group Insurance as per the following categories:
